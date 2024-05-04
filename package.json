@@ -1,0 +1,26 @@
+{
+  "name": "mc-backend-services",
+  "version": "1.0.0",
+  "repository": "https://github.com/Millenium-Cart/mc-backend-services.git",
+  "author": "Premanand Chowdhury <freudigprem@gmail.com>",
+  "license": "MIT",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "eslint --ext .ts --ignore-path .gitignore .",
+    "start": "node dist/src/index.js",
+    "dev": "nodemon src/index.ts --ignore ./dist/",
+    "build": "rimraf dist && tsc",
+    "lint": "eslint --fix --ext .ts --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.8",
+    "@typescript-eslint/parser": "^7.8.0",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  }
+}
